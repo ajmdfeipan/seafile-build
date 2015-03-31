@@ -47,7 +47,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 EOF
 
 
-echo "###############Checking for libevent..."
+echo "###############Checking for $LIBEVENT..."
 if ! test -f $PREFIX/include/evutil.h; then
         echo "Building $LIBEVENT"
         pushd $BUILDROOT
@@ -153,6 +153,6 @@ fi
 
 
 echo
-echo "Some more EXEs and DLLs which might be required to run the applet are in ./bin"
+echo "All installed into $PREFIX"
 
 
